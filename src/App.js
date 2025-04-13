@@ -366,6 +366,7 @@ function App() {
       });
       setMatchLoading(false);
       setCourtLoading(false);
+      setPlayerLoading(false);
       return;
     }
 
@@ -377,6 +378,7 @@ function App() {
       });
       setMatchLoading(false);
       setCourtLoading(false);
+      setPlayerLoading(false);
       return;
     }
 
@@ -389,11 +391,12 @@ function App() {
       });
       setMatchLoading(false);
       setCourtLoading(false);
+      setPlayerLoading(false);
       return;
     }
     setMatchLoading(true);
     setCourtLoading(true);
-
+    setPlayerLoading(true);
     try {
       const matchId = match._id;
       const encodedSessionDate = encodeURIComponent(sessionDate);
@@ -456,6 +459,7 @@ function App() {
 
       setMatchLoading(false);
       setCourtLoading(false);
+      setPlayerLoading(false);
       Swal.fire({
         icon: "success",
         title: "Success!",
@@ -470,6 +474,7 @@ function App() {
       console.error("Error adding match to court:", error);
       setMatchLoading(false);
       setCourtLoading(false);
+      setPlayerLoading(false);
     }
   };
 
@@ -926,7 +931,7 @@ function App() {
 
     setMatchLoading(true);
     setCourtLoading(true);
-
+    setPlayerLoading(true);
     try {
       const courtId = court._id;
 

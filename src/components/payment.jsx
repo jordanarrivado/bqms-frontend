@@ -348,7 +348,10 @@ const Payment = ({
                 filteredPlayers.map((player) => {
                   const ballTotal = Math.round(ballPrice * player.ball);
                   const allPlayer = playerHistory.length;
-                  const total = courtFeeTypeDis === "Per Head" ? parseFloat(courtPrice) + ballTotal : (parseFloat(courtPrice) / allPlayer) + ballTotal;
+                  const total = courtFeeTypeDis === "Per Head" 
+                        ? parseFloat(courtPrice) + ballTotal 
+                        : (parseFloat(courtPrice) / allPlayer) + ballTotal;
+
 
                   return (
                     <tr key={player._id}>
@@ -361,7 +364,7 @@ const Payment = ({
                       </td>
                       <td>{player.name}</td>
                       <td>{player.ball}</td>
-                      <td>{total}</td>
+                      <td>{total.toFixed(2)}</td>
                       <td>
                         <button onClick={() => handlePlayerPay(player._id, player.name, player.ball)}>Pay Now</button>
                       </td>

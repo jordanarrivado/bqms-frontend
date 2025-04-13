@@ -37,7 +37,7 @@ const Nav = ({ onNavigationClick, sessionStart, selectedComponent,click,setClick
         </li>
         
         <li 
-          title='Active Session' 
+          title='Manage Game' 
           onClick={() => handleClick(hasV)}
           className={selectedComponent === hasV ? 'active' : ''
           }
