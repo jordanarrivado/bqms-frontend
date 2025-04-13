@@ -170,7 +170,7 @@ const Payment = ({
     const totalAmount = payments.reduce((sum, p) => sum + p.totalPaid, 0);
   
     const confirmResult = await Swal.fire({
-      title: 'Confirm Bulk Payment',
+      title: 'Confirm all Payment',
       html: `Total amount for selected players: <b>${totalAmount.toFixed(2)}</b>. Proceed?`,
       icon: 'question',
       showCancelButton: true,
