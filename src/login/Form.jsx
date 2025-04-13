@@ -7,7 +7,7 @@ import { useAuth } from '../AuthContext';
 import { useNavigate } from 'react-router-dom';
 import bgVid from '../videos/bgVid3.mp4';
 
-const API_URL = 'http://localhost:3001'; 
+const API_URL = 'https://bqms-backend.onrender.com'; 
 
 const LoginPage = () => {
   const [isSignUp, setIsSignUp] = useState(false);
