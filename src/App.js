@@ -1358,6 +1358,8 @@ useEffect(()=>{
                   sessionStart={sessionStart}
                   setSessionStart={setSessionStart}
                   setClick={setClick}
+                  isChecked={isChecked}
+                  handleToggle={handleToggle}
                   user={user}
                   logout={logout}
                 />

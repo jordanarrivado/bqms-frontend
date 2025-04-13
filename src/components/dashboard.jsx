@@ -43,7 +43,6 @@ const Dashboard = ({ isChecked, areas,historyArea,setHistoryArea,user }) => {
   }, []);
   
 
-
   const monthlyData = [
     { name: "Jan", Players: 220, Revenue: 5500 },
     { name: "Feb", Players: 250, Revenue: 6700 },
